@@ -363,6 +363,10 @@ public class HVG {
 		//count motifs by their edges
 		Hashtable<String, Integer> motif = hvg.countMotif();
 		
+		//Motifs found are
+		System.out.println("Motifs found in data : ");
+		System.out.println(motif.toString());
+				
 		//Grouped horizontal visibility graph entropy
 		double ghe = hvg.shannonEntropy(motif, list.size()-window+1);
 		
