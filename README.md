@@ -1,5 +1,5 @@
-# Grouped Horizontal Visibility Graph Motifs
-
+# Grouped Horizontal Visibility Graph Entropy (GHVE)
+ This approach computes the probability of each motif type from horizontal visibility graph, and compute the probability of occurrence of group of motifs (have the same number of edges). Shannon entrop is used to measure the uncertanity. This approach is useful to apply physiological signals (e.g. RR-intervals extracted from electrocardiogram)higher entropy value represents the healthy people and lower entropy value shows the higher level of stress(sick, multimorbid and irregularities in autonomic nervouse system activity).
 
 ## Example 1: Calculate Grouped Horizontal Visibility Graph Entropy
 
@@ -39,7 +39,7 @@ Entropy value is : 2.413088436425758
 ```
 
 ## Reference
-If you are using this code then site the following paper.
+If you are using this code then site the following paper. <br />
 Choudhary, G. I., Aziz, W., Khan, I. R., Rahardja, S., & Fränti, P. (2019). Analysing the Dynamics of Interbeat Interval Time Series Using Grouped Horizontal Visibility Graph. IEEE Access, 7, 9926–9934.
 
 ## License
