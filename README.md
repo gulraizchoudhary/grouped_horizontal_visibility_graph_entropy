@@ -4,30 +4,30 @@
 ## Example 1: Calculate Grouped Horizontal Visibility Graph Entropy
 
 ```Java
-	//Sample RR-intervals
-	List<Double> list =  Arrays.asList(0.695,0.711,0.711,0.703,0.711,0.68,0.695,0.664,0.688,0.656,0.672,0.68,0.711,0.703,0.727);
-	int window = 5;
-	//Horizontal visibility graph class
-	HVG hvg = new HVG(window);
-	
-	//Visibility information
-	hvg.HorrVisibility(list);
-	
-	//count motifs by their edges
-	Hashtable<String, Integer> motif = hvg.countMotif();
-	
-	//Motifs found are
-	System.out.println("Motifs found in data : ");
-	System.out.println(motif.toString());
-			
-	//Grouped horizontal visibility graph entropy
-	double ghe = hvg.shannonEntropy(motif, list.size()-window+1);
-	
-	//print the hvg graph source to destination list
-	System.out.println("Entropy value is : "+ghe);
-	
-	//degree distribution statistics
-	System.out.println(hvg.countDegree());
+//Sample RR-intervals
+List<Double> list =  Arrays.asList(0.695,0.711,0.711,0.703,0.711,0.68,0.695,0.664,0.688,0.656,0.672,0.68,0.711,0.703,0.727);
+int window = 5;
+//Horizontal visibility graph class
+HVG hvg = new HVG(window);
+
+//Visibility information
+hvg.HorrVisibility(list);
+
+//count motifs by their edges
+Hashtable<String, Integer> motif = hvg.countMotif();
+
+//Motifs found are
+System.out.println("Motifs found in data : ");
+System.out.println(motif.toString());
+		
+//Grouped horizontal visibility graph entropy
+double ghe = hvg.shannonEntropy(motif, list.size()-window+1);
+
+//print the hvg graph source to destination list
+System.out.println("Entropy value is : "+ghe);
+
+//degree distribution statistics
+System.out.println(hvg.countDegree());
 
 ```
 ## Output
