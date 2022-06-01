@@ -1,1 +1,1 @@
-# grouped_horizontal_visibility_graph_entropy
+# Grouped horizontal visibility graph entropy
